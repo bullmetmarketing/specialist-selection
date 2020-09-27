@@ -603,6 +603,8 @@ article.br-masonry-ie a button{
   padding:10px 40px;
   font-size: 1em;
   border: 5px solid #bca468;
+  position: relative;
+  top:-25px;
 }
 article.br-masonry > *:nth-child(1){
   -ms-grid-row: 1;
@@ -1456,24 +1458,6 @@ article.br-history-se-ctnt-mobile {
 @keyframes start-app {
   0%   { opacity: 0; }
   100% { opacity: 1; }
-}
-.animation-showleft {
-  position: absolute;
-  -webkit-animation: showleft 2s forwards;
-          animation: showleft 2s forwards;
-          -webkit-transform:translateX(-50%);
-              -ms-transform:translateX(-50%);
-                  transform:translateX(-50%);
-}
-@-webkit-keyframes showleft {
-  0%   { opacity: 0; left:0; }
-  50%   { opacity: 0; left:25%; }
-  100% { opacity: 1; left:50%; }
-}
-@keyframes showleft {
-  0%   { opacity: 0; left:0; }
-  50%   { opacity: 0; left:25%; }
-  100% { opacity: 1; left:50%; }
 }
 
 .animation-showBottom {

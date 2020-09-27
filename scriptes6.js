@@ -179,6 +179,7 @@ const main = () => {
 const mainIe = () => {
   const selectors = new function() {
     this.page = document.querySelector('body');
+    this.brHeaderImg = this.page.querySelector(".br-header img");
     this.brSwiperContainer = this.page.querySelectorAll('.br-swiper-container');
     this.brSwiperWrapper = this.page.querySelectorAll('.br-swiper-wrapper');
     this.brSwiperDefault = this.page.querySelectorAll('.default');
@@ -192,8 +193,10 @@ const mainIe = () => {
     this.addIeTemplate = () => {
       selectors.brLeftButton.style.display = 'none'; 
       selectors.brRightButton.style.display = 'none'; 
+      selectors.brSwiperProductInfo.style.display = 'none';
       selectors.brMasonry.style.display = 'none';
       selectors.brMasonryIe.style.display = 'flex';
+      selectors.brHeaderImg.style.position = "relative";
       this.toggleIeClasses(selectors.brSwiperContainer, 'br-swiper-container',);
       this.toggleIeClasses(selectors.brSwiperWrapper, 'br-swiper-wrapper', );
       this.toggleIeClasses(selectors.brSwiperDefault, 'default' );
