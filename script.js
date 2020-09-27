@@ -259,6 +259,8 @@ var mainIe = function mainIe() {
     );
     this.brLeftButton = this.page.querySelector(".left-button");
     this.brRightButton = this.page.querySelector(".right-button");
+    this.brMasonry = this.page.querySelector(".br-masonry");
+    this.brMasonryIe = this.page.querySelector(".br-masonry-ie");
   })();
   var view = new (function () {
     var _this3 = this;
@@ -266,7 +268,8 @@ var mainIe = function mainIe() {
     this.addIeTemplate = function () {
       selectors.brLeftButton.style.display = "none";
       selectors.brRightButton.style.display = "none";
-      selectors.brSwiperProductInfo.style.display = "none";
+      selectors.brMasonry.style.display = "none";
+      selectors.brMasonryIe.style.display = "flex";
 
       _this3.toggleIeClasses(
         selectors.brSwiperContainer,

@@ -185,12 +185,15 @@ const mainIe = () => {
     this.brSwiperProductInfo = this.page.querySelector('.br-swipe-product-info');
     this.brLeftButton = this.page.querySelector('.left-button');
     this.brRightButton = this.page.querySelector('.right-button');   
+    this.brMasonry = this.page.querySelector('.br-masonry');   
+    this.brMasonryIe = this.page.querySelector('.br-masonry-ie');   
   }
   const view = new function() {
     this.addIeTemplate = () => {
       selectors.brLeftButton.style.display = 'none'; 
       selectors.brRightButton.style.display = 'none'; 
-      selectors.brSwiperProductInfo.style.display = 'none'; 
+      selectors.brMasonry.style.display = 'none';
+      selectors.brMasonryIe.style.display = 'flex';
       this.toggleIeClasses(selectors.brSwiperContainer, 'br-swiper-container',);
       this.toggleIeClasses(selectors.brSwiperWrapper, 'br-swiper-wrapper', );
       this.toggleIeClasses(selectors.brSwiperDefault, 'default' );
