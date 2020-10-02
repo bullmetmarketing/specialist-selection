@@ -144,6 +144,7 @@ article {
 }
 section.br-header{
   height: 75vh;
+  min-height: 600px;
   overflow: hidden;
   position: relative;
   -webkit-box-pack: start;
@@ -514,6 +515,7 @@ section.br-history h2.br-history-title{
 
 article.br-history-full-img{
   height: 75vh;
+  min-height: 600px;
   background-image: url('img/douglas-laing-specialist-selection-2.jpg');
   background-size: contain;
   background-position: left bottom;
@@ -1046,6 +1048,7 @@ article.br-history-se-ctnt-mobile {
   }
   section.br-header{
     height: 50vh;
+    min-height: 450px;
   }
   section.br-header img {
     max-width: 100px;
@@ -1057,6 +1060,9 @@ article.br-history-se-ctnt-mobile {
   section.br-swiper h1.br-swiper-title{
     font-size: 2em;
     top:18px;
+  }
+  article.br-history-full-img{
+    min-height: auto;
   }
   article.br-history-full-img article.br-history-full-img-text p{
     width: 100%;
